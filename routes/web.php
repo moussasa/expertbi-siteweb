@@ -14,3 +14,6 @@ Route::get('/apropos', function () {
 Route::get('/equipe', function () {
     return view('equipe.index');
 })->name('equipe');
+Route::get('/service', function () {
+    return view('service.index');
+})->name('service');

@@ -225,10 +225,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                     </ul>
                                                 </li> --}}
 
+                                                </li>
+                                                <li class="{{ request()->routeIs('service') ? 'active' : '' }}">
+                                                    <a href="{{ route('service') }}"
+                                                        title="service d'ExpertBI-SARL">Services</a>
+                                                </li>
                                                 <li class="{{ request()->routeIs('equipe') ? 'active' : '' }}">
                                                     <a href="{{ route('equipe') }}"
-                                                        title="contact d'ExpertBI-SARL">Notre Equipe</a>
-                                                </li>
+                                                        title="equipe d'ExpertBI-SARL">Notre Equipe</a>
                                                 <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
                                                     <a href="{{ route('contact') }}"
                                                         title="contact d'ExpertBI-SARL">Contacts</a>
