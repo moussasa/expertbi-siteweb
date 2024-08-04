@@ -1,0 +1,318 @@
+/*
+Name: 			default.css
+Written by: 	Altassura
+Version: 		1.0.0
+*/
+
+#footer .footer-copyright p, #footer .bottom-texte-blanc p, #footer .bottom-texte-blanc li {
+	color: #bbb;
+}
+.section.section {
+	margin: 0;
+}
+ul.nav-list li a:before {
+        border-left: 5px solid #db1b0c;
+}
+.page-header-custom-background {padding: 30px 0;}
+/* Child css */
+.gap-right {margin-right: 10px;}
+
+/* gras */
+.gras {font-weight: bold}, .gras a {font-weight: bold}
+.home-intro {
+	padding: 20px 0 20px 0;
+}
+
+p a {
+    color: #2091DE;
+}
+
+html .tip-red:before {
+    border-right-color: #C9170A !important;
+}
+html .tip-red {
+    background: #C9170A !important;
+    color: #ffffff !important;
+}
+
+.img-center {margin-left: auto; margin-right: auto }
+
+/* Mettre en valeur numéro de téléphone dans le header */
+#header .header-nav-top { padding-top: 0;font-size: 1.1em}
+#header .header-nav-top a {font-size: 1.1em;color: #D4180C;text-decoration:none;}
+.fa-phone  {font-size: 1.1em;color: #D4180C}
+.fa-map-marker,.fa-envelope {color: #0088cc;}
+
+/* bouton orange */
+a.valider {background:url("../../img/bg/bouton-devis.png") no-repeat;}
+a.valider:hover {background-position:0 -35px;}
+a.bouton,a.bouton:hover{font:bold 14px/14px Arial,Helvetica,sans-serif;width:150px;height:34px;display:inline-block;text-decoration:none;text-align: center;}
+a.bouton span {cursor:pointer;display:inline-block;padding:10px 0px 0px 0px;white-space:nowrap;color:#ffffff;}
+
+h1 { color: #0772b7;} /* rajouter pour mettre en bleu le theme */
+h2 { color: #0772b7;} /* rajouter pour mettre en bleu le theme */
+h3 { text-transform: none;color: #0772b7;}
+h4 { text-transform: none;color: #0772b7;}
+
+.blue-color {color: #0772b7;}
+.titre-cartouche {
+    background-color: #0772B7!important;
+	color: #FFF;
+    padding: 20px;
+    padding-top: 30px;
+    text-shadow: 0 1px #555;
+	border-radius: 2px 2px 0 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: -20px -20px 50px -20px;
+
+}
+.titre-cartouche span {
+    border: 3px solid #FFF;
+    box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+    font: bold 19px/65px Georgia,serif;
+    height: 70px;
+    margin: 10px auto -65px;
+    width: 70px;
+	background: #FFF;
+    border-radius: 100px;
+    color: #777;
+	display: block;
+}
+.titre-icon {
+    text-transform: none;
+    color: #0772b7;
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;	
+}
+.titre-icon2 {
+    text-transform: none;
+    color: #000;
+    font-size: 1.6em;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 26px;	
+}
+.titre-blog {
+	font-size: 1.4em;
+}
+.titre-h2 {
+	font-size: 2.2em;
+	font-weight: 300;
+	line-height: 42px;
+	margin: 0 0 32px 0;
+}
+.titre-h3 {
+    text-transform: none;
+    color: #0772b7;
+	font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;	
+}
+
+.white-h3 {
+    font-size: 1.8em;
+	color: #fff;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+.titre-h4 {
+    text-transform: none;
+    color: #0772b7;
+	font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
+}
+.calculator-logo {
+	font-size: 4em;
+	color: #0772b7;
+}
+#header .header-logo img {
+	margin: 15px 0px 15px 0;
+}
+
+#header .header-nav-top .nav > li > a, #header .header-nav-top .nav > li > span {
+    padding: 6px 10px 6px 0;
+}
+
+#header .header-nav-top .nav > li > a, #header .header-nav-top .nav > li:last-child > span {
+    padding: 6px 0px 6px 6px;
+}
+
+.img-responsive {
+	min-width: 100%;
+}
+.img-ratio {
+aspect-ratio: attr(width) / attr(height);
+}
+.title-sibebar {
+	font-size: 1.4em;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 27px;
+	margin: 0 0 14px 0;
+}
+.bottom-title {
+	color: #FFF;
+	font-size: 1.8em;
+    font-weight: 200;
+	letter-spacing: normal;
+    line-height: 27px;
+    margin: 0 0 14px 0;
+}
+@media (max-width: 767px){
+		.text-right, .text-left{
+		text-align: center;
+		margin-bottom: 2em;
+}
+}
+/* call to action */
+.box_call_to_action {
+	padding : 15px 25px;
+    background-color: #ff9600;
+	text-decoration:none;	
+	border-radius: 8px;
+	text-align: center;
+}
+.color_background_color_2 {
+    background-color: #1b76bb;
+}
+.box_call_to_action a:link  {
+	text-decoration:none;
+}
+.box_call_to_action_text {
+	margin: 5px 0 5px 0;
+    font-size: 20px;
+    font-family: Futura, Futura-medium,Verdana,Trebuchet MS,Arial,sans-serif !important;
+    color: #ffffff;
+	line-height:24px;
+    font-weight: normal;
+}
+.bouton {
+    border: 1px solid white;
+	margin:20px 0 0 0;
+    padding: 10px;
+    background: #ffffff;
+    color: #ff9600;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+	border-radius: 10px;
+	font-weight: 600;	
+}
+.bouton_2 {
+    border: 1px solid white;
+	margin:20px 0 0 0;
+    padding: 10px;
+    background: #ffffff;
+    color: #1b76bb;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+	border-radius: 10px;
+	font-weight: 600;
+}
+.bouton:hover {
+	background:#ffffff;
+	color:#c97701;
+	border:1px solid white;
+	transition:all 0.5s ease;
+}
+.bouton_2:hover{
+	background:#ffffff;
+	color:#14598d;
+	border:1px solid white;
+	transition:all 0.5s ease;
+}
+/* fin call to action */
+/* box_service_online */
+.box_service_online {
+	border: 1px solid #C9170A;
+	padding : 8px 8px;
+	text-decoration:none;				
+}
+.service_online_red{
+	color: #D4180C;
+}
+.box_service_online:hover {
+    background: #C9170A;
+	    color: #FFFFFF;
+}
+#header .header-nav-top .service_online a:hover {color: #FFF;text-decoration:none;}
+/* Fin box_service_online */
+/* bouton responsive */
+.blue-button {
+    background: #0099e6;
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 12px 60px;
+    border-radius: 35px;
+    text-align: center;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    color: #fff;
+    cursor: pointer;
+}
+.blue-button:hover {
+ background-color:#0077b3;
+ text-decoration:none;
+     color: #fff;
+}
+.green-button {
+    background: #3eb532;
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 12px 70px;
+    border-radius: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    color: #fff;
+    cursor: pointer;
+}
+.green-button:hover {
+ background-color:#369b2b;
+ text-decoration:none;
+     color: #fff;
+}
+/* Fin bouton responsive */
+/* pour les bouttons evite l'encadrement bleu */
+button:focus { outline:0 !important; }
+/* encadrement sommaire */
+.sommaire-ancre {background-color:#f1faff; border-radius: 12px; color: #FF3535; font-size: 1em; text-align: left;padding: 20px 30px  20px 30px;border: 1px solid #c0e9fd;}
+.sommaire-ancre ul {padding: 0 0 0 16px;margin: 0px 0px 0px 0px;}
+/* Fin encadrement sommaire */
+/* Titre H2 */
+.heading-box {
+	color: #0772B7;
+	font-size: 2.6em;
+	line-height: 120%;
+	position: relative;
+	padding: 0 0 0 60px;
+	text-align: left;
+}
+.heading-box::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: .3rem;
+    height: auto;
+    background: #ff9900;
+    border-radius: 0.2rem;
+    top: 0.5rem;
+    left: 0 rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+/* Fin Titre H2 */

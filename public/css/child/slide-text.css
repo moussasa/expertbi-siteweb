@@ -1,0 +1,51 @@
+.slide-text {
+    position: relative;
+}
+.caption {	
+    position: absolute;
+    top: 0%;
+    width: 50%;
+	height:100%;
+	background: rgba(80,80,80,0.8);
+}
+.caption-text {
+    position: absolute;	
+	top: 8%;
+	padding: 1em 2em;
+}
+.caption-description {
+	top: 20%;
+}
+.caption p,.separation {
+	color: #FFFFFF;
+	opacity: 1;
+	text-align: left;
+}
+@media (max-width: 1000px){
+.boutton-slide {
+	display: none;
+}
+.caption-text {
+	top: 5%;
+	padding: 0 2em;
+}
+.caption-text p {
+	font-size: 4vw;
+	line-height: 5vw;
+	margin:0;
+}
+.caption-description p,.separation {
+	font-size: 3vw;
+	line-height: 3.6vw;
+}
+}
+@media (min-width: 1000px){
+.caption-text p {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	}
+.caption-description p,.separation {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+}

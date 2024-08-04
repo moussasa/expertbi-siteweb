@@ -1,0 +1,15 @@
+.point_fort, .point_faible {
+	font-size: 1.6rem;
+    font-weight: 500;
+    list-style: none;	
+}
+.point_fort_vert, .point_faible_rouge {
+	font-size: 1.8rem;	
+	font-weight: 600;	
+}
+.point_faible_rouge {
+    color: #e01300;
+}
+.point_fort_vert {
+    color: #21791d;
+}
