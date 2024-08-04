@@ -1,0 +1,96 @@
+/*
+Name: 			default.css
+Written by: 	Altassura
+Version: 		1.0.0
+Date: 07/11/2016
+*/
+
+.nom-factor {
+    color: #337ab7;
+	font-size: 1.2em;
+	white-space:nowrap;
+}
+
+.logo-factor {
+	max-width: 200px;
+	min-width: 140px;
+	width: 100%;
+	height: auto;
+}
+
+.comparatif-wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.comparatif-table {
+  margin: 0 0 0 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .comparatif-table {
+    display: block;
+  }
+}
+
+.comparatif-row {
+  display: table-row;
+}
+
+.comparatif-row:nth-of-type(odd) {
+  /*background: #e9e9e9;*/
+  background: #FAFAFA;
+}
+.comparatif-row:nth-of-type(even) {
+  /*background: #f6f6f6;*/
+  background: #FDFDFD;
+}
+.comparatif-row:hover  {
+  background: #F2F2F2;
+  /*cursor:pointer;*/
+}
+.comparatif-row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #dc2122;
+}
+.comparatif-row.green {
+  background: #27ae60;
+}
+.comparatif-row.pink {
+  background: #9A2EFE;
+}
+.comparatif-row.orange {
+  background: #FE9A2E;
+}
+.comparatif-row.blue {
+  background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+  .comparatif-row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 4px 6px;
+  display: table-cell;
+  border-bottom: 1px solid #e9e9e9;
+  vertical-align: middle;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+.logo-drapeau {
+	width:40%;
+	max-width: 60px;
+}
+/* supprimer bordure bleu */
+input[type="image"] {outline:none;}

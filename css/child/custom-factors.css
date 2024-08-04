@@ -1,0 +1,90 @@
+#cspc-content {
+    background: #e4f3fe none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 18px;
+}
+#cspc-content-plus {
+/*    background: #E03123 none repeat scroll 0 0; */
+    background: #01ABDC none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 18px;
+	margin-bottom : 20px;
+}
+.button{
+    font-style: normal;
+    color: #fff;
+    background-color:#0099e6;
+    border-radius: 2px;
+    border:1px solid #fff;
+    padding: 7px 15px;
+    transition: .3s;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+.button a {
+	text-decoration: none;	
+}
+.button.transp{
+	background-color: #01ABDC;
+}
+.button:hover{
+	color: #fff;
+    background-color: #367AC0;
+    box-shadow: none;
+    text-decoration: none;
+    border:1px solid #367AC0;
+}
+.button:visited{
+	color: #fff;
+    text-decoration: none;
+}
+#titre-plus {
+	text-align: center;
+	font-size : 20px;
+	font-weight: bold;
+	color: white;
+}
+.list-factor li{
+	list-style: none;
+	color:white;
+	line-height: 160%;
+}
+#drapeau {
+	width:40px;
+	height:20px;
+}
+.conteneur_box {
+display: inline-block;
+}
+.box {
+    float: left;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    height: 280px;
+    width: 260px;
+    margin: 0 15px 0 0;
+    text-align: center ; 
+}
+.box a {
+	text-decoration:none;
+}
+.box:hover {
+    border: 1px solid #F57E20;
+}
+.image-logo {
+    padding: 0px 2px 0 2px;
+    box-shadow: inherit;
+}
+.card_text_center {
+padding: 0px 5px 0 5px;
+}
+.card_text,.card_text a {
+    font-size: 12px;
+    text-align: justify;
+    color: #666666;
+    text-decoration:none;
+    line-height:1.5em;
+}

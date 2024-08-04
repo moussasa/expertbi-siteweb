@@ -1,0 +1,97 @@
+/*
+Name: 			default.css
+Written by: 	Altassura
+Version: 		1.0.0
+Date: 07/11/2016
+*/
+
+.logo-factor {
+	max-width: 200px;
+	min-width: 140px;
+	width: 100%;
+	height: auto;
+}
+
+
+.comparatif-wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.comparatif-table {
+  margin: 0 0 0 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .comparatif-table {
+    display: block;
+  }
+}
+
+.comparatif-row {
+  display: table-row;
+}
+
+.comparatif-row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.comparatif-row:nth-of-type(even) {
+  background: #f6f6f6;
+}
+.comparatif-row:hover  {
+  background: #ecfbd4;
+}
+.comparatif-row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #ea6153;
+}
+.comparatif-row.green {
+  background: #27ae60;
+}
+.comparatif-row.pink {
+  background: #9A2EFE;
+}
+.comparatif-row.orange {
+  background: #FE9A2E;
+}
+.comparatif-row.blue {
+  background: #2980b9;
+}
+.comparatif-row.rose {
+  background: #F500A0;
+}
+.comparatif-row.brown {
+  background: #795548;
+}
+@media screen and (max-width: 880px) {
+  .comparatif-row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+.cell {
+  padding: 2px 4px 2px 4px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.val {
+  vertical-align: top;
+}
+@media screen and (max-width: 880px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+html body .tabs .nav-tabs a, html.dark body .tabs .nav-tabs a{color: white;}
+.nav-tabs li a {
+    font-size: 16px;
+    font-weight: bold;
+	background: #0772B7;
+}
+/* supprimer bordure bleu */
+input[type="image"] {outline:none;}
