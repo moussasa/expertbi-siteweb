@@ -152,8 +152,6 @@
                 border-color: orange;
             }
         }
-
-        
     </style>
 
 @endsection
@@ -270,6 +268,15 @@
 
     </div>
 
+    <div class="content">
+        <div>
+            <p class="little-title left">Notre localisation</p>
+            <div class="map" style="width: 100%;height: 40vh;">
+                <iframe style="border-radius: 10px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31145.92754471349!2d-8.045254091026179!3d12.632192359760115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51cc5df81b5b11%3A0x572b6d6dbdd05f4!2sACI%202000%2C%20Bamako!5e0!3m2!1sfr!2sml!4v1722778064595!5m2!1sfr!2sml" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br>
+        </div>
+    </div>
 @endsection
 
 @section('script')

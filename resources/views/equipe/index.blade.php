@@ -239,13 +239,13 @@
         style="padding: 10px;border-radius: 10px;margin: 10px">
         <div class="container">
             <ul class="breadcrumb breadcrumb-valign-mid">
-                {{-- <li><a href="{{ route('accueil') }}">Accueil</a></li> --}}
-                <li class="active">Accueil</li>
+                <li><a href="{{ route('accueil') }}">Accueil</a></li>
+                <li class="active">Equipe</li>
             </ul>
             <div class="row">
 
                 <div class="col-md-12" style="margin-top: 5px;">
-                    <h1>Accueil</h1>
+                    <h1>Equipe</h1>
                 </div>
             </div>
         </div>
@@ -253,54 +253,6 @@
 
 
 
-    <div class="slider-container">
-        <div class="slider" id="slider">
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2019/09/30/15/30/credit-4516068_1280.jpg"
-                    alt="Image 1"></div>
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2018/07/10/07/56/business-3528035_960_720.jpg"
-                    alt="Image 2"></div>
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475660_960_720.jpg"
-                    alt="Image 3"></div>
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2024/03/07/22/55/pen-8619484_1280.jpg"
-                    alt="Image 4"></div>
-        </div>
-        <div class="navigation-dots top" id="navigationDots">
-            <span class="navigation-dot active" data-index="0"></span>
-            <span class="navigation-dot" data-index="1"></span>
-            <span class="navigation-dot" data-index="2"></span>
-            <span class="navigation-dot" data-index="3"></span>
-        </div>
-    </div>
-
-
-    {{-- ripple --}}
-    <div id="ripple">
-        <div id="rippleCanvas"></div>
-        <div id="rippleText">
-            <div class="typing left">
-
-            </div>
-            <p class="left">L’histoire d’Expert BI commence il y a plusieurs années.
-
-            </P>
-            <P class="left">
-                En juin 2018, le promoteur, alors étudiant en fin de cycle master à l’Université de Montpellier, fonde
-                une entreprise individuelle nommée Paul-Service.
-
-            </p>
-            <p class="bottom">
-                Cette entreprise est créée au Mali, avec son siège social à Bamako. Au même moment, l’auteur poursuit un
-                autre master en systèmes d’information économique et financière à l’Université de Montpellier, qu’il
-                termine en 2021. Les ambitions du promoteur se tournent alors vers l'analyse de données.
-
-            </p>
-            <p class="left">
-                Il commence à réaliser des missions de data analyste en freelance en France, sous le statut de portage
-                salarial. Ainsi, en janvier 2024, Paul-Service devient Expert BI SARL, immatriculée au registre du
-                commerce et du crédit mobilier sous l’identifiant MA.BKO.2024.B.157 et le numéro NINA 4209195397003Z.
-            </p>
-        </div>
-    </div>
     <div class="content">
         <div>
             <p class="little-title left">Objectif</p>

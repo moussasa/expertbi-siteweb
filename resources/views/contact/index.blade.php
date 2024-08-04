@@ -26,24 +26,18 @@ style="padding: 10px;border-radius: 10px;margin: 10px">     <div class="containe
         <div class="row">
             <div class="col-md-6">
 
-                <h2 class="mb-sm mt-sm"><strong>Contactez</strong>-nous</h2>
+                <h2 class="mb-sm mt-sm little-title top"><strong>Contactez</strong>-nous</h2>
                 <form id="contactForm"  method="POST">
                     <input type="hidden" name="valid_form" value="valider">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">Votre nom *</label>
-                                <input type="text" value="" class="form-control" name="nom"
+                                <label class="control-label left">Votre nom complet *</label>
+                                <input type="text" value="" required autocomplete="off" class="form-control" name="nom"
                                     placeholder="Votre nom" id="name">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">Votre prénom *</label>
-                                <input type="text" class="form-control" name="prenom" placeholder="Votre prénom"
-                                    id="firstname">
-                            </div>
-                        </div>
+
                     </div>
 
 
@@ -52,31 +46,14 @@ style="padding: 10px;border-radius: 10px;margin: 10px">     <div class="containe
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="control-label">Votre téléphone *</label>
-                                <input type="text" class="form-control" name="telephone"
+                                <input type="text" class="form-control" required autocomplete="off" name="telephone"
                                     placeholder="Numéro de téléphone" id="telephone">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label">Votre adresse email</label>
-                                <input type="text" class="form-control" name="email" id="email">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">Société *</label>
-                                <input type="text" class="form-control" name="societe"
-                                    placeholder="Nom de votre entreprise" id="societe">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">Objet de la demande</label>
-                                <input type="text" value="" maxlength="100" class="form-control" name="sujet"
-                                    id="sujet">
+                                <label class="control-label top">Votre adresse email *</label>
+                                <input type="text" class="form-control" name="email" id="email" required autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -84,8 +61,8 @@ style="padding: 10px;border-radius: 10px;margin: 10px">     <div class="containe
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label class="control-label">Votre Message</label>
-                                <textarea rows="10" class="form-control" name="message" id="message"></textarea>
+                                <label class="control-label">Votre Message *</label>
+                                <textarea rows="10" class="form-control" name="message" id="message" required autocomplete="off"></textarea>
                             </div>
                         </div>
                     </div>
@@ -99,74 +76,43 @@ style="padding: 10px;border-radius: 10px;margin: 10px">     <div class="containe
             </div>
             <div class="col-md-6">
 
-                <div class="title-sibebar heading-primary mt-lg"><strong>Nos experts</strong> sont à votre disposition
+                <div class="little-title-little top mt-lg" style="margin-bottom: 2vh"><strong>Nos experts</strong> sont à votre disposition
                 </div>
-                <p class="text-justify">Vous souhaitez souscrire un contrat d'affacturage, obtenir du financement,
-                    effectuer un audit ou avoir des renseignements sur nos solutions de factoring. Laissez-nous vos
-                    coordonnées ou appelez-nous au <strong>01 84 21 85 40</strong>.</p>
+                <p class="text-justify">Vous souhaitez améliorer votre système d'information, obtenir des analyses de données précises, réaliser un audit de vos processus ou obtenir des conseils en gestion et en stratégie.Laissez-nous vos
+                    coordonnées ou appelez-nous au <strong>+223 62 84 55 92</strong>.</p>
                 <hr>
 
-                <div class="title-sibebar heading-primary"><strong>Altassura</strong></div>
+                <div class="little-title top"><strong>ExpertBi</strong></div>
                 <ul class="list list-icons list-icons-style-3 mt-xlg">
-                    <li><i class="fa fa-phone"></i> <strong>Téléphone:</strong> <span style="color:#0772b7">01 84 21
-                            85 40</span></li>
+                    <li><i class="fa fa-phone"></i> <strong>Téléphone:</strong> <span style="color:#0772b7">+223 62 84 55 92</span></li>
                     <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a
-                            href="mailto:info@affacturage.fr">info@affacturage.fr</a></li>
-                    <li><i class="fa fa-building-o"></i>
-                        <p> <strong>Siren</strong> : 497 784 454<br>
-                            <strong>N° ORIAS:</strong> 08042408 RCS Nice 497 784 454
+                            href="mailto:expertbi18@gmail.com">expertbi18@gmail.com</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p> <strong>ACI 2000</strong> Bamako (MALI)<br>
                         </p>
                     </li>
                 </ul>
 
                 <hr>
 
-                <div class="title-sibebar heading-primary">Nos <strong>Horaires</strong></div>
+                <div class="little-title top">Nos <strong>Horaires</strong></div>
                 <ul class="list list-icons list-dark mt-xlg">
-                    <li><i class="fa fa-clock-o"></i> Lundi - Vendredi : de 9h00 à 19h00</li>
+                    <li><i class="fa fa-clock-o"></i> Lundi - Vendredi : de 08h00 à 16h00</li>
                 </ul>
 
             </div>
 
         </div>
-
         <div class="row">
-            <h2 class="mt-xl heading-primary">Déjà client ? Contacter directement nos experts par téléphone</h2>
-            <div class="col-md-8 mt-xl">
-                <p>Vous êtes déjà client auprès d'Altassura ? Vous pouvez nous contacter pour obtenir une assistance ou
-                    des informations sur votre contrat d'affacturage existant.</p>
-                <p>Pour tout changement relatif à votre contrat d'affacturage (modification, suppression, consultation
-                    de vos contrats ou demandes d'information détaillées ou complémentaires par rapport aux solutions de
-                    financement), vous pouvez contacter par téléphone à ce numéro depuis la France ou l'étranger : +33 1
-                    84 21 85 40 (numéro non surtaxé, coût selon opérateur, dès 9h00 et jusqu’à 19h en semaine). Un
-                    numéro unique pour joindre tous nos services</p>
-                <p>L'attachement envers nos clients et nos partenaires fait de Altassura un courtier unique sur le
-                    marché de l'affacturage. Nos financements et nos garanties spécialement adaptées aux besoins
-                    exprimés par nos clients et partenaires nous permettent de revendiquer une qualité de service
-                    exclusive.</p>
-                <p>Altassura développe son expertise de spécialiste depuis 2007 en France comme à l’international avec
-                    les principaux acteurs du financement et de l’assurance, afin de vous apporter des solutions de
-                    factoring adaptées à votre entreprise.
-                    Notre expérience nous permet de vous apporter un éclairage objectif sur chaque type de solution
-                    d'affacturage pour financer votre trésorerie, tout en libérant vos capacités de financement auprès
-                    de vos partenaires bancaires.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 mt-xl">
-                <img class="img-responsive appear-animation" src="../img/produits/question-reponse-affacturage.jpg"
-                    alt="Les question et les réponses sur l'affacturage" data-appear-animation="fadeInRight">
-                <div style="background-color: #eee;">
-                    <div style="font-size:30px;padding : 20px 20px 10px 20px">Une question ?</div>
-                    <div style="padding : 10px 20px 5px 20px">Trouvez votre réponse parmi les questions les plus
-                        fréquentes.</div>
-                    <div style="padding : 5px 20px 10px 20px"><a href="../assistance/faq-question-reponse/index.html"
-                            class="btn btn-lg btn-primary"
-                            title=">Accéder aux questions et aux réponses sur l'affacturage">Accéder aux FAQ</a></div>
-                </div>
+            <div class="col-md-12 mt-xl">
+                <h2 class="little-title-little top">Pas encore client ? Contactez l'un de nos conseillers par téléphone</h2>
+                <p>Vous avez la possibilité de joindre un conseiller ExpertBI même si vous n'êtes pas encore client. Nos conseillers sont spécialisés dans les systèmes d'information, l'analyse de données, et les conseils en gestion.</p>
+                <p>Pour toute question concernant nos services, contactez-nous au +223 62 84 55 92 .
+                <p>Bénéficiez des conseils de nos experts afin d’optimiser vos systèmes d'information et vos processus décisionnels. Profitez des dernières innovations en matière d'analyse de données et de gestion pour améliorer la performance de votre entreprise.</p>
             </div>
         </div>
 
-
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-md-12 mt-xl">
                 <h2 class="mt-xl heading-primary">Pas encore client ? Contacter l'un de nos conseillers par téléphone
                 </h2>
@@ -174,19 +120,19 @@ style="padding: 10px;border-radius: 10px;margin: 10px">     <div class="containe
                     Sachez que nos conseillers sont spécialisés en affacturage mais aussi dans la gestion du poste
                     clients : assurance crédit, financement, caution .
                     Demandez votre devis de factoring en ligne gratuitement et sans engagement.</p>
-                <p>Pour toute question concernant une offre d'affacturage, contactez-nous au 01 84 21 85 40 (prix d’un
+                <p>Pour toute question concernant une offre d'affacturage, contactez-nous au +223 62 84 55 92 (prix d’un
                     appel local selon opérateur, du lundi au vendredi de 9h00 à 19h).
                     Vous pouvez également faire une <a href="../souscription/index.html"
                         title="Demande de devis d'affacturage ou de factoring en ligne">demande de devis d'affacturage
                         en ligne</a>.
                     Si vous avez une question ou si vous souhaitez un devis en matière d'affacturage ou financement pour
-                    votre entreprise, appelez-nous au 01 84 21 85 40 (prix d’un appel local selon opérateur, du lundi au
+                    votre entreprise, appelez-nous au +223 62 84 55 92 (prix d’un appel local selon opérateur, du lundi au
                     vendredi de 9h00 à 19h).</p>
                 <p>Bénéficiez des conseils de nos experts afin d’optimiser vos conditions contractuelles et financières.
                     Profitez des dernières innovations au niveau des contrats d'affacturage ou d'assurance-crfédit pour
                     optimiser votre poste clients.</p>
             </div>
-        </div>
+        </div> --}}
 
     </div>
 
