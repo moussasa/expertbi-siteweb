@@ -22,23 +22,23 @@
 @endsection
 
 @section('body')
-    <section id="colored" class="page-header page-header-custom-background" style="padding: 10px;border-radius: 10px;">
-        <div class="container">
+<section id="colored" class="page-header page-header-custom-background"
+style="padding: 10px;border-radius: 10px;margin: 10px">      <div class="container">
             <ul class="breadcrumb breadcrumb-valign-mid">
                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
                 <li class="active">A propos</li>
             </ul>
             <div class="row">
-                <br>
-                <br>
-                <div class="col-md-12">
+
+                <div class="col-md-12" style="margin-top: 5px;">
+
                     <h1>A propos</h1>
                 </div>
             </div>
         </div>
     </section>
     <div class="content-section">
-        <h2>Création</h2>
+        <h2 class="little-title top">Création</h2>
         <p>
             L’idée de la création de Expert BI remonte à plusieurs années. En juin 2018, le promoteur a créé une entreprise
             individuelle appelée Paul-Service, immatriculée au registre du commerce sous le numéro NINA : 31809195397571C
@@ -56,7 +56,7 @@
     </div>
 
     <div class="content-section">
-        <h2>Gérant et équipe</h2>
+        <h2 class="little-title left">Gérant et équipe</h2>
         <p>
             La société Expert BI SARL est dirigée par Mr Daniel Paul COULIBALY, diplômé de deux masters de l’université de
             Montpellier : expertise socio-économique emplois et compétences et système d’information économique et
@@ -76,8 +76,8 @@
     </div>
 
     <div class="content-section">
-        <h2>Stratégie</h2>
-        <h3>Objectif</h3>
+        <h2 class="little-title bottom">Stratégie</h2>
+        <h3 class="little-title left">Objectif</h3>
         <p>
             L’objectif de Expert BI est d’utiliser des outils informatiques pour aider les entreprises à suivre efficacement
             leurs activités quotidiennes et à visualiser leurs indicateurs clés de performance. Nous sommes spécialisés dans
@@ -85,22 +85,22 @@
             missions d’expertise judiciaire et les audits.
         </p>
 
-        <h3>Mission et valeurs</h3>
+        <h3 class="little-title top">Mission et valeurs</h3>
         <p>
-            <strong>Mission :</strong> Aider les entreprises à prendre des décisions efficaces et efficientes au quotidien.
+            <strong class="little-title-little bottom">Mission :</strong> Aider les entreprises à prendre des décisions efficaces et efficientes au quotidien.
         </p>
         <p>
-            <strong>Valeurs :</strong> Transparence, travail et excellence.
+            <strong class="little-title-little left">Valeurs :</strong> Transparence, travail et excellence.
         </p>
         <p>
-            <strong>Transparence :</strong> Nous basons nos actions sur des informations réelles et fiables.
+            <strong class="little-title-little top">Transparence :</strong> Nous basons nos actions sur des informations réelles et fiables.
         </p>
-        <p>
-            <strong>Travail :</strong> Nous nous engageons à rester aux côtés de nos clients en permanence, cherchant
+        <p >
+            <strong class="little-title-little left">Travail :</strong> Nous nous engageons à rester aux côtés de nos clients en permanence, cherchant
             toujours à les satisfaire, car ils sont notre raison d’être.
         </p>
         <p>
-            <strong>Excellence :</strong> Nous nous efforçons de toujours mieux faire, de conseiller avec excellence et de
+            <strong class="little-title-little bottom">Excellence :</strong> Nous nous efforçons de toujours mieux faire, de conseiller avec excellence et de
             garantir une satisfaction totale à nos clients.
         </p>
     </div>

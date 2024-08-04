@@ -1,4 +1,84 @@
 <style>
+    .little-title {
+        position: relative;
+        font-weight: 800;
+        font-family: 'Consolas', monospace;
+        font-size: 1.63rem;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .little-title::before {
+        position: absolute;
+        content: '';
+        width: 80px;
+        height: 5px;
+        bottom: -8px;
+        left: 5px;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+
+    }
+
+
+    .little-title-little {
+        position: relative;
+        font-weight: 800;
+        font-family: 'Consolas', monospace;
+        font-size: 1.25rem;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .little-title-little::before {
+        position: absolute;
+        content: '';
+        width: 80px;
+        height: 5px;
+        bottom: -8px;
+        left: 5px;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+
+    }
+
+    .left,
+    .top,
+    .bottom {
+        opacity: 0;
+    }
+
+    .left {
+        transform: translateX(-200px);
+        filter: blur(5px);
+        transition: 2.4s;
+    }
+
+    .top {
+        transform: translateY(-200px);
+        filter: blur(5px);
+        transition: 2.4s;
+    }
+
+    .bottom {
+        transform: translateY(200px);
+        filter: blur(5px);
+        transition: 2.4s;
+    }
+
+    .left.visible,
+    .top.visible,
+    .bottom.visible {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
     footer {
         width: 100%;
         height: auto;
@@ -52,6 +132,7 @@
         color: white;
         text-decoration: none;
     }
+
     .footer_contact p {
         color: white;
     }
@@ -116,12 +197,12 @@
             margin-top: 5px;
             padding-top: 10px;
             margin-left: 0
-
         }
-        .footer_contact h5{
-        text-align: center;
-        font-weight: 900;
-        color: white;
+
+        .footer_contact h5 {
+            text-align: center;
+            font-weight: 900;
+            color: white;
         }
 
 
@@ -222,8 +303,34 @@
         </div>
     </div>
 </footer> --}}
-    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const elementsToObserve = document.querySelectorAll('.left, .top, .bottom');
 
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // observer.unobserve(entry.target); // Optional: Remove the observer after it becomes visible
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            elementsToObserve.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
     @yield('script')
 
     <!-- Head Libs -->

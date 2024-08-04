@@ -4,134 +4,15 @@
 @section('body')
 
 
-
-    <style>
-        .form-control:focus {
-            border-color: #66afe9;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
-            outline: 0 none;
-        }
-    </style>
-    <script>
-        $(document).ready(function() {
-            $('#contactForm').bootstrapValidator({
-                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-                feedbackIcons: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
-                fields: {
-                    nom: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Votre Nom est obligatoire'
-                            },
-                            stringLength: {
-                                max: 100,
-                                message: 'Votre Nom ne doit pas dépasser 100 caractères de long'
-                            },
-                            regexp: {
-                                regexp: /^[a-z \-A-ZÀ-ÿ]+$/,
-                                message: 'Votre Nom doit être alphabétique'
-                            },
-                            different: {
-                                field: 'prenom',
-                                message: 'Votre Nom et votre Prénom ne peuvent pas être identique'
-                            }
-                        }
-                    },
-                    prenom: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Votre Prénom est obligatoire'
-                            },
-                            stringLength: {
-                                max: 100,
-                                message: 'Votre Prénom ne doit pas dépasser 100 caractères de long'
-                            },
-                            regexp: {
-                                regexp: /^[a-z \-A-ZÀ-ÿ]+$/,
-                                message: 'Votre Prénom doit être alphabétique'
-                            },
-                            different: {
-                                field: 'nom',
-                                message: 'Votre Nom et votre Prénom ne peuvent pas être identique'
-                            }
-                        }
-                    },
-                    societe: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Le nom de votre société est obligatoire'
-                            },
-                            stringLength: {
-                                min: 2,
-                                max: 100,
-                                message: 'Le nom de votre société doit avoir au minimum 2 caractères et ne doit pas dépasser 100 caractères'
-                            }
-                        }
-                    },
-                    siren: {
-                        validators: {
-                            regexp: {
-                                regexp: /^[0-9]{3}?[0-9]{3}?[0-9]{3}$/i,
-                                message: 'Le numéro de siren doit être valide'
-                            }
-                        }
-                    },
-                    email: {
-                        validators: {
-                            regexp: {
-                                regexp: /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/i,
-                                message: 'Votre email doit être valide.'
-                            }
-                        }
-                    },
-                    telephone: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Votre numéro de téléphone est obligatoire'
-                            },
-                            stringLength: {
-                                min: 2,
-                                max: 100,
-                                message: 'Votre numéro de téléphone doit avoir au minimum 2 caractères et ne doit pas dépasser 20 caractères de long'
-                            }
-                        }
-                    },
-                    sujet: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                                max: 100,
-                                message: 'Votre message doit avoir au minimum 2 caractères et ne doit pas dépasser 100 caractères de long'
-                            }
-                        }
-                    },
-                    message: {
-                        validators: {
-                            stringLength: {
-                                min: 2,
-                                max: 500,
-                                message: 'Votre message doit avoir au minimum 2 caractères et ne doit pas dépasser 500 caractères de long'
-                            }
-                        }
-                    }
-                }
-            });
-        });
-    </script>
-    <section id="colored" class="page-header page-header-custom-background" style="padding: 10px;border-radius: 10px;">
-        <div class="container">
+<section id="colored" class="page-header page-header-custom-background"
+style="padding: 10px;border-radius: 10px;margin: 10px">     <div class="container">
             <ul class="breadcrumb breadcrumb-valign-mid">
                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
                 <li class="active">Contact</li>
             </ul>
             <div class="row">
-                <br>
-                <br>
-                <div class="col-md-12">
+
+                <div class="col-md-12" style="margin-top: 5px;">
                     <h1>Contact</h1>
                 </div>
             </div>
