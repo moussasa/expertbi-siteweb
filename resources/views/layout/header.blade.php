@@ -252,9 +252,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </header>
 
-        <div class="onload">
+        {{-- <div class="onload">
             <img src="{{ asset('img/logo/logo.png') }}" alt="">
-        </div>
+        </div> --}}
         <div class="to_top_btn" onclick="to_top();">
             <i class="fa fa-chevron-up"></i>
         </div>
@@ -271,7 +271,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     document.documentElement.scrollTop = 0;
                 }
 
-                $(window).on('load', function() {
-                    $('.onload').fadeOut(2000);
-                });
+            //     $(window).on('load', function() {
+                    // $('.onload').fadeOut(2000);
+                // });
             </script>
