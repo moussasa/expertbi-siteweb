@@ -6,11 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('Titre')</title>
-    <meta name="keywords" content="1">
-    <meta name="description" content="Expert bi sarl.">
+    <meta name="keywords" content="Expert BI, audit des systèmes d'information, performance IT, sécurité IT, conformité IT, conseil en gestion des ressources humaines, conseil en informatique, gestion financière, gestion stratégique, solutions sur mesure, création site web">
+    <meta name="description" content="Expert BI est un leader dans l'audit des systèmes d'information, offrant des solutions personnalisées pour améliorer la performance, la sécurité et la conformité de vos infrastructures IT. Découvrez nos services de conseil en gestion des ressources humaines, en informatique, ainsi qu'en gestion financière et stratégique. Contactez-nous pour des solutions sur mesure adaptées à vos besoins.">
+
     <meta name="author" content="Moussa Samaké">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="index.html">
+    {{-- <link rel="canonical" href="index.html"> --}}
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
