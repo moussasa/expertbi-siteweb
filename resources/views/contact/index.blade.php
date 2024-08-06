@@ -4,13 +4,13 @@
 @section('body')
 
 
-    <section id="colored" class="page-header page-header-custom-background"
-        style="padding: 10px;border-radius: 10px;margin: 10px">
-        <div class="container">
-            <ul class="breadcrumb breadcrumb-valign-mid">
+<section  class="page-header page-header-custom-background"
+style="background: linear-gradient(90deg, #ff6ec4, #7873f5);padding: 10px;border-radius: 10px;margin: 10px">
+<div class="container">
+            {{-- <ul class="breadcrumb breadcrumb-valign-mid">
                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
                 <li class="active">Contact</li>
-            </ul>
+            </ul> --}}
             <div class="row">
 
                 <div class="col-md-12" style="margin-top: 5px;">

@@ -94,13 +94,13 @@
 @endsection
 
 @section('body')
-    <section id="colored" class="page-header page-header-custom-background"
-        style="padding: 10px;border-radius: 10px;margin: 10px">
+    <section class="page-header page-header-custom-background"
+        style="background: linear-gradient(90deg, #ff6ec4, #7873f5);padding: 10px;border-radius: 10px;margin: 10px">
         <div class="container">
-            <ul class="breadcrumb breadcrumb-valign-mid">
+            {{-- <ul class="breadcrumb breadcrumb-valign-mid">
                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
                 <li class="active">Services</li>
-            </ul>
+            </ul> --}}
             <div class="row">
                 <div class="col-md-12" style="margin-top: 5px;">
                     <h1>Services</h1>
@@ -122,24 +122,21 @@
         <section class="content">
             <div class="container">
                 <div class="team-member left">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Daniel Paul COULIBALY">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="Daniel Paul COULIBALY">
                     <h3>Daniel Paul COULIBALY</h3>
                     <p>Daniel est le fondateur et le gérant de Expert BI. Diplômé de deux masters de l'Université de
                         Montpellier, il possède plus de 6 ans d'expérience en finance, contrôle de gestion et systèmes
                         d'information. Sa vision et son leadership ont conduit l'entreprise vers de nouveaux sommets.</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Sophie Dupont">
-                    <h3>NOM</h3>
-                    <p>NOM est notre chef de projet en analyse de données. Avec un diplôme en statistiques et une expertise
-                        en data science, elle dirige nos projets d'analyse de données avec une précision et une efficacité
-                        remarquables.</p>
+                    <img src="{{ asset('img/img/user1.png') }}" alt="Seydou NIARE">
+                    <h3>Seydou NIARE</h3>
+                    <p>Seydou est notre ingénieur développeur et data scientist formé à l'université de Grenoble et à
+                        l'université de Montpellier.
+                        Il fait partie de nos équipes de développement.</p>
                 </div>
                 <div class="team-member bottom">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Jean Martin">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="Jean Martin">
                     <h3>NOM</h3>
 
                     <p>NOM est notre expert en comptabilité. Avec plus de 10 ans d'expérience dans le domaine, il supervise
@@ -148,23 +145,19 @@
                     </p>
                 </div>
                 <div class="team-member left">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Marie Lefebvre">
-                    <h3>NOM</h3>
-                    <p>NOM est notre comptable et analyste de données. Elle apporte une rigueur exceptionnelle à la gestion
-                        financière de l'entreprise et à l'analyse des données de nos clients.</p>
+                    <img src="{{ asset('img/img/user1.png') }}" alt="Marie Lefebvre">
+                    <h3>Moussa Samaké</h3>
+                    <p>Notre développeur informatique conçoit, programme et maintient des applications et des systèmes logiciels. Il travaille en étroite collaboration avec les équipes de projet pour comprendre les besoins des utilisateurs.</p>
                 </div>
                 <div class="team-member top">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Ahmed Traoré">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="Ahmed Traoré">
                     <h3>NOM</h3>
                     <p>NOM est notre expert financier. Avec une vaste expérience dans la gestion des finances et des
                         investissements, il assure la stabilité et la croissance financière de notre entreprise. Son
                         expertise nous permet de naviguer efficacement dans le monde complexe de la finance.</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0"
-                        alt="Fatoumata Koné">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="Fatoumata Koné">
                     <h3>NOM</h3>
                     <p>NOM est notre gestionnaire expérimenté. Avec une expertise approfondie dans la coordination des
                         opérations et la gestion des équipes, il assure le bon déroulement des projets et le respect des

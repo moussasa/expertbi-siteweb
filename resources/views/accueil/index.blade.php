@@ -16,7 +16,6 @@
             display: flex;
             transition: transform 0.5s ease-in-out;
             height: 100%;
-            /* Make slider full height of container */
         }
 
         .slide {
@@ -103,10 +102,14 @@
                 width: 100%;
                 max-width: 100%;
                 margin: 0 auto;
-                height: 45vh;
+                height: 43vh;
                 position: relative;
                 overflow: hidden;
             }
+            .slide img {
+            width: 100%;
+            height: 100%;
+        }
         }
 
         .typing {
@@ -159,13 +162,13 @@
 
 
 
-    <section id="colored" class="page-header page-header-custom-background"
-        style="padding: 10px;border-radius: 10px;margin: 10px">
+    <section class="page-header page-header-custom-background"
+        style="background: linear-gradient(90deg, #ff6ec4, #7873f5);padding: 10px;border-radius: 10px;margin: 10px">
         <div class="container">
-            <ul class="breadcrumb breadcrumb-valign-mid">
-                {{-- <li><a href="{{ route('accueil') }}">Accueil</a></li> --}}
-                <li class="active">Accueil</li>
-            </ul>
+            {{-- <ul class="breadcrumb breadcrumb-valign-mid">
+                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
+                 <li class="active">Accueil</li>
+            </ul> --}}
             <div class="row">
 
                 <div class="col-md-12" style="margin-top: 5px;">
@@ -179,21 +182,25 @@
 
     <div class="slider-container">
         <div class="slider" id="slider">
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2019/09/30/15/30/credit-4516068_1280.jpg"
+            <div class="slide"><img src="{{ asset('img/img/1.jpg') }}"
                     alt="Image 1"></div>
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2018/07/10/07/56/business-3528035_960_720.jpg"
+            <div class="slide"><img src="{{ asset('img/img/2.jpg') }}"
                     alt="Image 2"></div>
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475660_960_720.jpg"
+            <div class="slide"><img src="{{ asset('img/img/3.jpg') }}"
                     alt="Image 3"></div>
-            <div class="slide"><img src="https://cdn.pixabay.com/photo/2024/03/07/22/55/pen-8619484_1280.jpg"
+            <div class="slide"><img src="{{ asset('img/img/1.jpg') }}"
                     alt="Image 4"></div>
+            {{-- 1 image --}}
+            <div class="slide"><img src="{{ asset('img/img/1.jpg') }}"
+                    alt="Image 1"></div>
+
         </div>
-        <div class="navigation-dots top" id="navigationDots">
+        {{-- <div class="navigation-dots top" id="navigationDots">
             <span class="navigation-dot active" data-index="0"></span>
             <span class="navigation-dot" data-index="1"></span>
             <span class="navigation-dot" data-index="2"></span>
             <span class="navigation-dot" data-index="3"></span>
-        </div>
+        </div> --}}
     </div>
 
 
@@ -272,7 +279,10 @@
         <div>
             <p class="little-title left">Notre localisation</p>
             <div class="map" style="width: 100%;height: 40vh;">
-                <iframe style="border-radius: 10px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31145.92754471349!2d-8.045254091026179!3d12.632192359760115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51cc5df81b5b11%3A0x572b6d6dbdd05f4!2sACI%202000%2C%20Bamako!5e0!3m2!1sfr!2sml!4v1722778064595!5m2!1sfr!2sml" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe style="border-radius: 10px"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31145.92754471349!2d-8.045254091026179!3d12.632192359760115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51cc5df81b5b11%3A0x572b6d6dbdd05f4!2sACI%202000%2C%20Bamako!5e0!3m2!1sfr!2sml!4v1722778064595!5m2!1sfr!2sml"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <br>
         </div>
@@ -328,25 +338,97 @@
         });
 
         // Slider functionality
-        const slider = document.getElementById('slider');
-        const dots = document.querySelectorAll('.navigation-dot');
-        let currentIndex = 0;
+        // const slider = document.getElementById('slider');
+        // const dots = document.querySelectorAll('.navigation-dot');
+        // let currentIndex = 0;
 
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const index = dot.getAttribute('data-index');
-                currentIndex = index;
-                updateSlider();
-            });
-        });
+        // dots.forEach(dot => {
+        //     dot.addEventListener('click', () => {
+        //         const index = dot.getAttribute('data-index');
+        //         currentIndex = index;
+        //         updateSlider();
+        //     });
+        // });
 
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[currentIndex].classList.add('active');
-        }
+        // function updateSlider() {
+        //     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        //     dots.forEach(dot => dot.classList.remove('active'));
+        //     dots[currentIndex].classList.add('active');
+        // }
 
         // Touch events for mobile
+        // let startX;
+        // let isDragging = false;
+
+        // slider.addEventListener('touchstart', (e) => {
+        //     startX = e.touches[0].clientX;
+        //     isDragging = true;
+        // });
+
+        // slider.addEventListener('touchmove', (e) => {
+        //     if (!isDragging) return;
+        //     const touch = e.touches[0];
+        //     const moveX = touch.clientX - startX;
+        //     slider.style.transform = `translateX(calc(-${currentIndex * 100}% + ${moveX}px))`;
+        // });
+
+        // slider.addEventListener('touchend', (e) => {
+        //     if (!isDragging) return;
+        //     isDragging = false;
+        //     const touch = e.changedTouches[0];
+        //     const moveX = touch.clientX - startX;
+
+        //     if (moveX > 50 && currentIndex > 0) {
+        //         currentIndex--;
+        //     } else if (moveX < -50 && currentIndex < dots.length - 1) {
+        //         currentIndex++;
+        //     }
+
+        //     updateSlider();
+        // });
+
+
+        const slider = document.getElementById('slider');
+        let slides = Array.from(slider.children).filter(child => child.nodeType === 1); // Filtre les éléments enfants
+
+
+        let currentIndex = 0;
+
+        function updateSlider() {
+            slider.style.transition = 'transform 0.5s ease-in-out';
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function resetSlider() {
+            console.log('Resetting slider');
+            slider.style.transition = 'none';
+            slider.style.transform = `translateX(0)`;
+            currentIndex = 0;
+        }
+
+        slider.addEventListener('transitionend', () => {
+            if (currentIndex >= 5) {
+                resetSlider();
+                setTimeout(() => {
+                    slider.style.transition = 'transform 0.5s ease-in-out';
+                }, 0);
+            }
+        });
+
+        setInterval(() => {
+
+            currentIndex++;
+            if (currentIndex >= 5) {
+                resetSlider();
+            } else {
+                updateSlider();
+            }
+
+            // Re-filtre les éléments visibles
+            slides = Array.from(slider.children).filter(child => child.nodeType === 1);
+        }, 5000);
+
+        // Touch evenement
         let startX;
         let isDragging = false;
 
@@ -370,11 +452,12 @@
 
             if (moveX > 50 && currentIndex > 0) {
                 currentIndex--;
-            } else if (moveX < -50 && currentIndex < dots.length - 1) {
+            } else if (moveX < -50 && currentIndex < 5 - 1) {
                 currentIndex++;
             }
 
             updateSlider();
+
         });
     </script>
     <script>
