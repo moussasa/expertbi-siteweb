@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>expertbi.com</title>
+    <title>Expert bi sarl - Votre partenaire en Business Intelligence</title>
     <style>
         * {
             color: white;
@@ -56,7 +56,7 @@
 
 <body>
     <div class="container">
-        <img class="logo" src="{{ asset('img/logo/logo.png') }}">
+        <img class="logo" src="{{ asset('img/logo/logo.png') }}" alt="expertbi">
 
 
 

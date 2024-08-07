@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('Titre', 'A propos')
+@section('Titre', 'Expert bi sarl - Votre partenaire en Business Intelligence')
 @section('css')
     <style>
         body {

@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('Titre', 'ExpertBi SARL')
+@section('Titre', 'Expert bi sarl - Votre partenaire en Business Intelligence')
 @section('css')
     <style>
         .slider-container {

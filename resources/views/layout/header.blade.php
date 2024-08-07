@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('Titre')</title>
-    <meta name="keywords" content="Expert BI, audit des systèmes d'information, performance IT, sécurité IT, conformité IT, conseil en gestion des ressources humaines, conseil en informatique, gestion financière, gestion stratégique, solutions sur mesure, création site web">
-    <meta name="description" content="Expert BI est un leader dans l'audit des systèmes d'information, offrant des solutions personnalisées pour améliorer la performance, la sécurité et la conformité de vos infrastructures IT. Découvrez nos services de conseil en gestion des ressources humaines, en informatique, ainsi qu'en gestion financière et stratégique. Contactez-nous pour des solutions sur mesure adaptées à vos besoins.">
+    <meta name="keywords" content="Expert bi sarl, Business Intelligence, BI, Services BI, Analyse de données, Solutions BI, Conseil BI, création site web">
+    <meta name="description" content="Expert bi sarl - Solutions d'analyse de données, conseil en BI, optimisation stratégique.">
 
     <meta name="author" content="Moussa Samaké">
     <meta name="robots" content="index, follow">
-    {{-- <link rel="canonical" href="index.html"> --}}
+    <!-- <link rel="canonical" href="index.html"> -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
@@ -138,17 +138,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
     <div class="body">
-        <header id="header"
-            data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}'>
+        <header id="header" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}'>
             <div class="header-body">
                 <div class="header-container container">
                     <div class="header-row">
                         <div class="header-column">
                             <div class="header-logo">
                                 <a href="{{ route('accueil') }}" title="ExpertBI-SARL.com">
-                                    <img alt="ExpertBI-SARL.FR" width="153" height="53" data-sticky-width="150"
-                                        data-sticky-height="31" data-sticky-top="33"
-                                        src="{{ asset('img/logo/logo.png') }}">
+                                    <img alt="ExpertBI-SARL" width="153" height="53" data-sticky-width="150" data-sticky-height="31" data-sticky-top="33" src="{{ asset('img/logo/logo.png') }}">
                                 </a>
                             </div>
                         </div>
@@ -157,18 +154,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <nav class="header-nav-top">
                                     <ul class="nav nav-pills">
                                         <li class="hidden-xs">
-                                            <span class="data-product" data-product="/qui-sommes-nous/"
-                                                title="ExpertBI-SARL : qui sommes nous"><i
-                                                    class="fa fa-angle-right"></i> Qui sommes nous</span>
+                                            <span class="data-product" data-product="/qui-sommes-nous/" title="ExpertBI-SARL : qui sommes nous"><i class="fa fa-angle-right"></i> Qui sommes nous</span>
                                         </li>
                                         <!-- <li class="hidden-xs"><span class="data-product" data-product="/contact/" title="Demande de contact pour l'ExpertBI-SARL"><i class="fa fa-angle-right" title="Nous contacter pour en savoir plus sur l'ExpertBI-SARL"></i> Contactez-nous</span></li> -->
                                         <!-- <li class="hidden-xs">
          <span class="data-product" data-product="/souscription/" title="Demande de devis d'ExpertBI-SARL en ligne"><span class="box_service_online service_online service_online_red gras"><i class="fas fa-laptop"></i> Devis en ligne</span></span>
         </li> -->
                                         <li>
-                                            <span class="ws-nowrap gras" style="margin-left:10px"><i
-                                                    class="fa fa-phone"></i><a href="tel:0022362845592"
-                                                    title="Appelez par téléphone nos experts d'ExpertBI-SARL.fr">+223
+                                            <span class="ws-nowrap gras" style="margin-left:10px"><i class="fa fa-phone"></i><a href="tel:0022362845592" title="Appelez par téléphone nos experts d'ExpertBI-SARL.fr">+223
                                                     62 84 55 92</a></span>
                                         </li>
                                         <!-- <li class="hidden-xs"><span class="service_online gras"><a class="box_service_online" href="/souscription/" title="Demande de devis d'ExpertBI-SARL en ligne"><i class="fas fa-laptop"></i> Devis en ligne</a></span></li> -->
@@ -177,17 +170,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="header-row">
                                 <div class="header-nav">
-                                    <button class="btn header-btn-collapse-nav" data-toggle="collapse"
-                                        data-target=".header-nav-main">
+                                    <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
                                         <i class="fa fa-bars"></i>
                                     </button>
-                                    <div
-                                        class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+                                    <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
                                         <nav>
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li class="{{ request()->routeIs('accueil') ? 'active' : '' }}">
-                                                    <a href="{{ route('accueil') }}"
-                                                        title="contact d'ExpertBI-SARL">Accueil</a>
+                                                    <a href="{{ route('accueil') }}" title="contact d'ExpertBI-SARL">Accueil</a>
                                                 </li>
                                                 {{-- <li class="dropdown">
                                                     <a class="dropdown-toggle"
@@ -228,19 +218,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                                 </li>
                                                 <li class="{{ request()->routeIs('service') ? 'active' : '' }}">
-                                                    <a href="{{ route('service') }}"
-                                                        title="service d'ExpertBI-SARL">Services</a>
+                                                    <a href="{{ route('service') }}" title="service d'ExpertBI-SARL">Services</a>
                                                 </li>
                                                 <li class="{{ request()->routeIs('equipe') ? 'active' : '' }}">
-                                                    <a href="{{ route('equipe') }}"
-                                                        title="equipe d'ExpertBI-SARL">Notre Equipe</a>
+                                                    <a href="{{ route('equipe') }}" title="equipe d'ExpertBI-SARL">Notre Equipe</a>
                                                 <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                                                    <a href="{{ route('contact') }}"
-                                                        title="contact d'ExpertBI-SARL">Contacts</a>
+                                                    <a href="{{ route('contact') }}" title="contact d'ExpertBI-SARL">Contacts</a>
                                                 </li>
                                                 <li class="{{ request()->routeIs('apropos') ? 'active' : '' }}">
-                                                    <a href="{{ route('apropos') }}"
-                                                        title="contact d'ExpertBI-SARL">A propos</a>
+                                                    <a href="{{ route('apropos') }}" title="contact d'ExpertBI-SARL">A propos</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -254,25 +240,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </header>
 
         {{-- <div class="onload">
-            <img src="{{ asset('img/logo/logo.png') }}" alt="">
-        </div> --}}
-        <div class="to_top_btn" onclick="to_top();">
-            <i class="fa fa-chevron-up"></i>
-        </div>
+            <img src="{{ asset('img/logo/logo.png') }}" alt="Expertbi logo">
+    </div> --}}
+    <div class="to_top_btn" onclick="to_top();">
+        <i class="fa fa-chevron-up"></i>
+    </div>
 
-        <div role="main" class="main" style="padding: 0px;">
-            <script>
-                window.addEventListener('scroll', function() {
-                    var scroll = document.querySelector('.to_top_btn');
-                    scroll.classList.toggle("active_btn", window.scrollY > 350);
-                });
+    <div role="main" class="main" style="padding: 0px;">
+        <script>
+            window.addEventListener('scroll', function() {
+                var scroll = document.querySelector('.to_top_btn');
+                scroll.classList.toggle("active_btn", window.scrollY > 350);
+            });
 
-                function to_top() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
+            function to_top() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
 
             //     $(window).on('load', function() {
-                    // $('.onload').fadeOut(2000);
-                // });
-            </script>
+            // $('.onload').fadeOut(2000);
+            // });
+        </script>

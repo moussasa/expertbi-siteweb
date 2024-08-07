@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('Titre', 'ExpertBi SARL')
+@section('Titre', 'Expert bi sarl - Votre partenaire en Business Intelligence')
 @section('css')
     <style>
         .header {
@@ -136,7 +136,7 @@
                         Il fait partie de nos équipes de développement.</p>
                 </div>
                 <div class="team-member bottom">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="Jean Martin">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
                     <h3>NOM</h3>
 
                     <p>NOM est notre expert en comptabilité. Avec plus de 10 ans d'expérience dans le domaine, il supervise
@@ -145,19 +145,19 @@
                     </p>
                 </div>
                 <div class="team-member left">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="Marie Lefebvre">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
                     <h3>Moussa Samaké</h3>
                     <p>Notre développeur informatique conçoit, programme et maintient des applications et des systèmes logiciels. Il travaille en étroite collaboration avec les équipes de projet pour comprendre les besoins des utilisateurs.</p>
                 </div>
                 <div class="team-member top">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="Ahmed Traoré">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
                     <h3>NOM</h3>
                     <p>NOM est notre expert financier. Avec une vaste expérience dans la gestion des finances et des
                         investissements, il assure la stabilité et la croissance financière de notre entreprise. Son
                         expertise nous permet de naviguer efficacement dans le monde complexe de la finance.</p>
                 </div>
                 <div class="team-member">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="Fatoumata Koné">
+                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
                     <h3>NOM</h3>
                     <p>NOM est notre gestionnaire expérimenté. Avec une expertise approfondie dans la coordination des
                         opérations et la gestion des équipes, il assure le bon déroulement des projets et le respect des

@@ -16,3 +16,11 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
+
+ // Enregistrer le singleton pour la planification des tâches
+$app->singleton(
+    Illuminate\Console\Scheduling\Schedule::class,
+    App\Console\Commands\ScheduleTasks::class
+);
+
+return $app;

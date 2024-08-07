@@ -220,7 +220,7 @@
 
         <div class="footer_logo">
             <div class="img">
-                <img src="{{ asset('img/logo/logo.png') }}" alt="">
+                <img src="{{ asset('img/logo/logo.png') }}" alt="expertbi">
             </div>
             <div class="footer_logo_text">
                 {{-- <h4>ExpertBI</h4> --}}
@@ -291,7 +291,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-1"><img alt="ExpertBI-SARL.com" width="80" height="27" style="min-width:none"
-                        loading="lazy" src="{{ asset('img/logo/logo.png') }}"></div>
+                        loading="lazy" src="{{ asset('img/logo/logo.png') }}" alt="expertbi"></div>
                 <div class="col-md-7">
                     <p>© Copyright 2024. All Rights Reserved.</p>
                 </div>
