@@ -122,14 +122,14 @@
         <section class="content">
             <div class="container">
                 <div class="team-member left">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="Daniel Paul COULIBALY">
+                    <img src="{{ asset('img/img/e1.jpg') }}" alt="Daniel Paul COULIBALY">
                     <h3>Daniel Paul COULIBALY</h3>
                     <p>Daniel est le fondateur et le gérant de Expert BI. Diplômé de deux masters de l'Université de
                         Montpellier, il possède plus de 6 ans d'expérience en finance, contrôle de gestion et systèmes
                         d'information. Sa vision et son leadership ont conduit l'entreprise vers de nouveaux sommets.</p>
                 </div>
                 <div class="team-member">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="Seydou NIARE">
+                    <img src="{{ asset('img/img/e2.jpg') }}" alt="Seydou NIARE">
                     <h3>Seydou NIARE</h3>
                     <p>Seydou est notre ingénieur développeur et data scientist formé à l'université de Grenoble et à
                         l'université de Montpellier.
