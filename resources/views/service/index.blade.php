@@ -18,6 +18,7 @@
             text-align: center;
             margin-bottom: 15px;
             margin-top: 15px;
+            line-height:1.1;
         }
 
         .service p {

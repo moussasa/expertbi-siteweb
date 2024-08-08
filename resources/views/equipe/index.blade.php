@@ -73,6 +73,8 @@
             border-radius: 15px;
             padding: 5px 0;
             width: 100%;
+            line-height: 1.1;
+
         }
 
         .team-member p {
@@ -103,7 +105,7 @@
             </ul> --}}
             <div class="row">
                 <div class="col-md-12" style="margin-top: 5px;">
-                    <h1>Services</h1>
+                    <h1>Equipe</h1>
                 </div>
             </div>
         </div>
@@ -136,18 +138,21 @@
                         Il fait partie de nos équipes de développement.</p>
                 </div>
                 <div class="team-member bottom">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
-                    <h3>NOM</h3>
-
-                    <p>NOM est notre expert en comptabilité. Avec plus de 10 ans d'expérience dans le domaine, il supervise
+                    <img src="{{ asset('img/img/e4.jpg') }}" alt="expertbi">
+                    <h3>Abdoulaye Coulibaly</h3>
+                    <p>Expert chargé du logiciel Sage, il a un master en audit et contrôle de gestion, et est formateur
+                        spécialisé en Sage avec plusieurs années d'expériences dans le métier.</p>
+                    {{-- <p>NOM est notre expert en comptabilité. Avec plus de 10 ans d'expérience dans le domaine, il supervise
                         l'audit de nos processus comptables pour garantir leur conformité aux normes comptables et
                         réglementaires. Il veille également à l'intégrité financière et à la transparence de nos opérations.
-                    </p>
+                    </p> --}}
                 </div>
                 <div class="team-member left">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
+                    <img src="{{ asset('img/img/e3.jpg') }}" alt="expertbi">
                     <h3>Moussa Samaké</h3>
-                    <p>Notre développeur informatique conçoit, programme et maintient des applications et des systèmes logiciels. Il travaille en étroite collaboration avec les équipes de projet pour comprendre les besoins des utilisateurs.</p>
+                    <p>Notre développeur informatique conçoit, programme et maintient des applications et des systèmes
+                        logiciels. Il travaille en étroite collaboration avec les équipes de projet pour comprendre les
+                        besoins des utilisateurs.</p>
                 </div>
                 <div class="team-member top">
                     <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
