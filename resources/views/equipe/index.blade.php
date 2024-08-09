@@ -131,21 +131,25 @@
                         d'information. Sa vision et son leadership ont conduit l'entreprise vers de nouveaux sommets.</p>
                 </div>
                 <div class="team-member">
-                    <img src="{{ asset('img/img/e2.jpg') }}" alt="Seydou NIARE">
-                    <h3>Seydou NIARE</h3>
-                    <p>Seydou est notre ingénieur développeur et data scientist formé à l'université de Grenoble et à
-                        l'université de Montpellier.
-                        Il fait partie de nos équipes de développement.</p>
+                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
+                    <h3>André DAKOUO</h3>
+                    <p>André est notre consultant Expert financier avec une bonne expérience en entreprise, dans le système UN & Fonds Mondial.
+Promoteur du bureau d'études SABICO.</p>
+
                 </div>
                 <div class="team-member bottom">
                     <img src="{{ asset('img/img/e4.jpg') }}" alt="expertbi">
                     <h3>Abdoulaye Coulibaly</h3>
                     <p>Expert chargé du logiciel Sage, il a un master en audit et contrôle de gestion, et est formateur
                         spécialisé en Sage avec plusieurs années d'expériences dans le métier.</p>
-                    {{-- <p>NOM est notre expert en comptabilité. Avec plus de 10 ans d'expérience dans le domaine, il supervise
-                        l'audit de nos processus comptables pour garantir leur conformité aux normes comptables et
-                        réglementaires. Il veille également à l'intégrité financière et à la transparence de nos opérations.
-                    </p> --}}
+
+                </div>
+                <div class="team-member top">
+                    <img src="{{ asset('img/img/e2.jpg') }}" alt="Seydou NIARE">
+                    <h3>Seydou NIARE</h3>
+                    <p>Seydou est notre ingénieur développeur et data scientist formé à l'université de Grenoble et à
+                        l'université de Montpellier.
+                        Il fait partie de nos équipes de développement.</p>
                 </div>
                 <div class="team-member left">
                     <img src="{{ asset('img/img/e3.jpg') }}" alt="expertbi">
@@ -154,21 +158,14 @@
                         logiciels. Il travaille en étroite collaboration avec les équipes de projet pour comprendre les
                         besoins des utilisateurs.</p>
                 </div>
-                <div class="team-member top">
-                    <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
-                    <h3>NOM</h3>
-                    <p>NOM est notre expert financier. Avec une vaste expérience dans la gestion des finances et des
-                        investissements, il assure la stabilité et la croissance financière de notre entreprise. Son
-                        expertise nous permet de naviguer efficacement dans le monde complexe de la finance.</p>
-                </div>
-                <div class="team-member">
+                {{-- <div class="team-member">
                     <img src="{{ asset('img/img/user1.png') }}" alt="expertbi">
                     <h3>NOM</h3>
                     <p>NOM est notre gestionnaire expérimenté. Avec une expertise approfondie dans la coordination des
                         opérations et la gestion des équipes, il assure le bon déroulement des projets et le respect des
                         objectifs de l'entreprise. Sa capacité à optimiser les ressources et à résoudre les problèmes
                         garantit une efficacité maximale et une performance exceptionnelle.</p>
-                </div>
+                </div> --}}
             </div>
         </section>
     </div>
